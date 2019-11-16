@@ -424,7 +424,6 @@ public class Prospector : MonoBehaviour
             case eScoreEvent.draw: //Drawing a card
             case eScoreEvent.gameWin: //Won the round
             case eScoreEvent.gameLoss: //Lost the round
-
                 //Add fsRun to the _Scoreboard score
                 if (fsRun != null)
                 {

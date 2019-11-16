@@ -67,6 +67,11 @@ public class ScoreManager : MonoBehaviour
                 score += scoreRun;
                 scoreRun = 0;
                 break;
+
+            case eScoreEvent.mine:
+                chain++;
+                scoreRun += chain;
+                break;
         }
 
         switch (evt)
@@ -86,6 +91,10 @@ public class ScoreManager : MonoBehaviour
                 {
                     print("Your final score for the game was: " + score);
                 }
+                break;
+
+            default:
+                print("score: " + score + " scoreRun:" + scoreRun + " chain:" + chain);
                 break;
         }
     }

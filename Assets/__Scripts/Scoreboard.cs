@@ -27,7 +27,7 @@ public class Scoreboard : MonoBehaviour
         set
         {
             _score = value;
-            scoreString = _score.ToString("NO");
+            scoreString = _score.ToString("N0");
         }
     }
 
@@ -69,7 +69,7 @@ public class Scoreboard : MonoBehaviour
     //calling function can do more with it (like set fontSizes, etc.)
     public FloatingScore CreateFloatingScore(int amt, List<Vector2> pts)
     {
-        GameObject go = Instantiate<GameObject> (prefabFloatingScore);
+        GameObject go = Instantiate <GameObject> (prefabFloatingScore);
         go.transform.SetParent(canvasTrans);
         FloatingScore fs = go.GetComponent<FloatingScore>();
         fs.score = amt;

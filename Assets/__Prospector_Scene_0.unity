@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab25925e33efa2449162ca46571c8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabFloatingScore: {fileID: 2311038607236835495, guid: 1265f4072be068146a30906fede49982,
+  prefabFloatingScore: {fileID: 2844331325603791918, guid: 1265f4072be068146a30906fede49982,
     type: 3}
   _score: 0
   _scoreString: 
